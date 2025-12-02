@@ -3405,6 +3405,14 @@ is
    --  Detach audio stream processor from the entire audio pipeline
    pragma Import (C, DetachAudioMixedProcessor, "DetachAudioMixedProcessor");
 
+   procedure EnableBackfaceCulling;
+   --  Enable backface culling globally
+   pragma Import (C, EnableBackfaceCulling, "rlEnableBackfaceCulling");
+
+   procedure DisableBackfaceCulling;
+   --  Disable backface culling globally
+   pragma Import (C, DisableBackfaceCulling, "rlDisableBackfaceCulling");
+
    RAYLIB_VERSION_MAJOR : constant := 5;
    RAYLIB_VERSION_MINOR : constant := 0;
    RAYLIB_VERSION_PATCH : constant := 0;

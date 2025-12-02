@@ -101,6 +101,8 @@ begin
          Cam.target := (0.0, 0.0, 0.0);
       end if;
 
+      Raylib.DisableBackfaceCulling;
+
       Raylib.BeginDrawing;
 
       Raylib.ClearBackground (Raylib.RAYWHITE);
